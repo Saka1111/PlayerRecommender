@@ -1,5 +1,5 @@
 <div style = 'text-align: center;'>
-  # PlayerRecommender
+  <h1>PlayerRecommender</h1>
   
   The football/soccer transfer market can get dynamic and messy. The Player Recommender is a system which provides recommendations to the user, to point out who the best players are to sign.
 
