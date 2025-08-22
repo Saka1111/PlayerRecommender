@@ -20,4 +20,13 @@
     </li>
     <li>You need a GCP account and access to Google's Gemini API. This is so that you can input an <b>API key</b> 🔑</li>
   </ul>
+
+  <h2>How to Run 🏃‍♂️</h2>
+  <p>To run on Streamlit, run this in the terminal
+  <pre>
+    <code>
+    streamlit run PlayerRecommender.py
+    </code>
+    </pre>
+  </p>
 </div>
