@@ -11,11 +11,13 @@
 
   <h2>Key Requirements</h2>
   <ul>
-    <li>If you cloned this repo, install the required packages:</li>
+    <li>If you cloned this repo, install the required packages:
+    <pre>
+    <code>
+    pip install streamlit plotly
+    </code>
+    </pre>
+    </li>
+    <li>You need a GCP account and access to Google's Gemini API. This is so that you can input an API key</li>
   </ul>
-  <pre>
-  <code>
-  pip install streamlit plotly
-  </code>
-  </pre>
 </div>
