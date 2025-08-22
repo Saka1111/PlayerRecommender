@@ -8,4 +8,14 @@
   Also, Gemini generates graphs and figures to visualise the different statistics and compare them different statistics between other players.
 
   This dataset is made by Hubert Sidorowicz on <a href='https://www.kaggle.com/datasets/hubertsidorowicz/football-players-stats-2024-2025'>Kaggle</a>, and this dataset is originally on the <a href = 'https://fbref.com/en/comps/Big5/2024-2025/stats/players/2024-2025-Big-5-European-Leagues-Stats'>FBref</a> website.
+
+  <h2>Key Requirements</h2>
+  <ul>
+    <li>If you cloned this repo, install the required packages:</li>
+  </ul>
+  <pre>
+  <code>
+  pip install streamlit plotly
+  </code>
+  </pre>
 </div>
