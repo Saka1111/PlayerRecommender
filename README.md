@@ -14,7 +14,7 @@
     <li>If you cloned this repo, install the required packages:
     <pre>
     <code>
-    pip install streamlit plotly
+    pip install seaborn pandas numpy matplotlib scikit-learn streamlit google.generativeai plotly
     </code>
     </pre>
     </li>
