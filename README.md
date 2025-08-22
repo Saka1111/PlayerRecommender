@@ -1,5 +1,7 @@
 <div style = 'text-align: center;'>
   <h1>The Player Recommender ⚽️ </h1>
+
+  To use the app click here <a href = 'https://playerrecommender-x4jpuv4jxfwpvcvapvk8d7.streamlit.app'>here</a>
   
   The football/soccer transfer market can get dynamic and messy. The Player Recommender is a system which provides recommendations to the user, to point out who the best players are to sign 💰
 
