@@ -7,7 +7,7 @@
   Using these clusters, a Gemini API produces personalised recommendations which suggest which players are the best fit. 🤖 
   Also, Gemini generates graphs and figures to visualise the different statistics and compare them different statistics between other players. 📈 
 
-  This dataset is made by Hubert Sidorowicz on <a href='https://www.kaggle.com/datasets/hubertsidorowicz/football-players-stats-2024-2025'>Kaggle</a>, and this dataset is originally on the <a href = 'https://fbref.com/en/comps/Big5/2024-2025/stats/players/2024-2025-Big-5-European-Leagues-Stats'>FBref</a> website.
+  This dataset is made by <b>Hubert Sidorowicz</b> on <b><a href='https://www.kaggle.com/datasets/hubertsidorowicz/football-players-stats-2024-2025'>Kaggle</a></b>, and this dataset is originally on the <b><a href = 'https://fbref.com/en/comps/Big5/2024-2025/stats/players/2024-2025-Big-5-European-Leagues-Stats'>FBref</a><b/b> website.
 
   <h2>Key Requirements 🔐</h2>
   <ul>
@@ -18,6 +18,6 @@
     </code>
     </pre>
     </li>
-    <li>You need a GCP account and access to Google's Gemini API. This is so that you can input an API key 🔑</li>
+    <li>You need a GCP account and access to Google's Gemini API. This is so that you can input an <b>API key</b> 🔑</li>
   </ul>
 </div>
