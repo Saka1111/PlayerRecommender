@@ -19,6 +19,12 @@
     pip install seaborn pandas numpy matplotlib scikit-learn streamlit google.generativeai plotly
     </code>
     </pre>
+      or
+    <pre>
+    <code>
+    pip install -r requirements.txt
+    </code>
+    </pre>
     </li>
     <li>You need a GCP account and access to Google's Gemini API. This is so that you can input an <b>API key</b> 🔑</li>
   </ul>
