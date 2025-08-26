@@ -10,7 +10,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 import streamlit as st
 
-from IPython.display import display, Markdown
+# from IPython.display import display, Markdown
 import google.generativeai as genai
 import json
 import plotly.express as px
