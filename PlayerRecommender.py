@@ -133,6 +133,7 @@ with tab1:
               When creating graphs use {data_json}
               Please only output graphs based on what is said here {text}
               If {text} is empty, just choose the most suitable stats and types of graphs.
+              Make sure column names are valid so do not cause any errors
               1st create a table to show the players and their key stats
               2nd create a radar chart with the key stats of the players
               3rd create a bar charts for each key stats of the players
@@ -239,6 +240,7 @@ with tab1:
               When creating graphs use {data_json}
               Please only output graphs based on what is said here {text}
               If {text} is empty, just choose the most suitable stats and types of graphs.
+              Make sure column names are valid so do not cause any errors
               1st create a table to show the players and their key stats
               2nd create a radar chart with the key stats of the players
               3rd create a bar charts for each key stats of the players
