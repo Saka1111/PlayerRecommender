@@ -136,6 +136,7 @@ with tab1:
               Please only output graphs based on what is said here {text}
               If {text} is empty, just choose the most suitable stats and types of graphs.
               Make sure column names are valid so do not cause any errors
+              This includes no errors when applying any functions to the columns
               1st create a table to show the players and their key stats
               2nd create a radar chart with the key stats of the players
               3rd create a bar charts for each key stats of the players
@@ -245,6 +246,7 @@ with tab1:
               Please only output graphs based on what is said here {text}
               If {text} is empty, just choose the most suitable stats and types of graphs.
               Make sure column names are valid so do not cause any errors
+              This includes no errors when applying any functions to the columns
               1st create a table to show the players and their key stats
               2nd create a radar chart with the key stats of the players
               3rd create a bar charts for each key stats of the players
