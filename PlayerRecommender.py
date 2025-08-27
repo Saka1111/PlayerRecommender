@@ -78,6 +78,8 @@ with tab1:
       prompt = f"""
       {system_instructions}{message}
       The players recommended should be similar to {player} but also be an improvement on them.
+      Prioritise improvement.
+      Do not recommend players that are in the same squad as {player}
       Just note that the "cluster" and "Loss" columns are not important for the analysis, they are just for the clustering and similarity purposes.
       I want no errors when I do response.text, make sure any error with this does not occur
       Please provide pros and cons of each player you recommend
@@ -197,6 +199,8 @@ with tab1:
       prompt = f"""
       {system_instructions}{message}
       The players recommended should be similar to {player} but also be an improvement on them.
+      Prioritise improvement.
+      Do not recommend players that are in the same squad as {player}
       Just note that the "cluster" and "Loss" columns are not important for the analysis, they are just for the clustering and similarity purposes.
       I want no errors when I do response.text, make sure any error with this does not occur
       Please provide pros and cons of each player you recommend
