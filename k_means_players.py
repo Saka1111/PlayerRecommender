@@ -86,7 +86,7 @@ t2_2['cluster'] = 11
 t3 = cr_df(New, 3)
 t3 = kmeans(t3, 1)
 t3_0 = cr_df(t3, 0)
-t3_0['cluster'] = 11
+t3_0['cluster'] = 97
 
 t4 = cr_df(New, 4)
 t4 = kmeans(t4, 3)
@@ -335,6 +335,7 @@ t29 = cr_df(New, 29)
 t29 = kmeans(t29, 1)
 t29_0 = cr_df(t29, 0)
 t29_0['cluster'] = 96
+
 
 all_players = pd.concat([t0_0, t0_1, t0_2, t1_0, t1_1, t1_2, t1_3, t1_4, t1_5,
                  t2_0, t2_1, t2_2, t3_0, t4_0, t4_1, t4_2, t5_0, t6_0, t6_1, t6_2, t6_3, t7_0, t7_1, t7_2, t7_3, t7_4, t7_5,
