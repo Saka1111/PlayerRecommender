@@ -25,6 +25,19 @@ New = pd.read_csv('Files/gmm_players.csv')
 
 players = list(all_players.Player.sort_values().unique())
 
+def load_stat_mapping(filepath):
+    with open(filepath, 'r') as f:
+        string_keys_mapping = json.load(f)
+    
+    int_keys_mapping = {int(k): v for k, v in string_keys_mapping.items()}
+    return int_keys_mapping
+
+stat_mapping = load_stat_mapping('Files/s_stats.json')
+
+big_stat_mapping = load_stat_mapping('Files/b_stats.json')
+
+base_cols = ['Player', 'Pos', 'Squad', 'Age']
+
 text = ''
 
 # Canvas
@@ -89,9 +102,21 @@ with tab1:
       if st.button('Show Recommended Players'):
           with st.spinner('Generating recommendations...'):
               if player in df1.Player.unique():
-                st.session_state['recommended_players'] = df1[['Player', 'Pos', 'Squad', 'Age']]
+                # st.session_state['recommended_players'] = df1[['Player', 'Pos', 'Squad', 'Age']]
+                if 'GK' in df1.loc[df1.Player == player]['Pos'].values[0]:
+                   st.session_state['recommended_players'] = df1[base_cols + ['GA', 'GA90', 'SoTA', 'Saves', 'Save%', 'W', 'D', 'L', 'CS', 'CS%', 'PSxG', 'PSxG/SoT', 'PSxG+/-', '/90', 'Cmp_stats_keeper_adv', 'Att_stats_keeper_adv', 'Cmp%_stats_keeper_adv', 'Att (GK)', 'Thr', 'Launch%', 'AvgLen', 'Opp', 'Stp', 'Stp%', '#OPA', '#OPA/90', 'AvgDist']]
+                else:
+                    stats = stat_mapping.get(c, [])
+                    cluster_cols = base_cols + stats
+                    st.session_state['recommended_players'] = df1[cluster_cols]
               else:
-                st.session_state['recommended_players'] = combined_df[['Player', 'Pos', 'Squad', 'Age']]
+                # st.session_state['recommended_players'] = combined_df[['Player', 'Pos', 'Squad', 'Age']]
+                if 'GK' in combined_df.loc[combined_df.Player == player]['Pos'].values[0]:
+                     st.session_state['recommended_players'] = combined_df[base_cols + ['GA', 'GA90', 'SoTA', 'Saves', 'Save%', 'W', 'D', 'L', 'CS', 'CS%', 'PSxG', 'PSxG/SoT', 'PSxG+/-', '/90', 'Cmp_stats_keeper_adv', 'Att_stats_keeper_adv', 'Cmp%_stats_keeper_adv', 'Att (GK)', 'Thr', 'Launch%', 'AvgLen', 'Opp', 'Stp', 'Stp%', '#OPA', '#OPA/90', 'AvgDist']]
+                else:
+                    stats = stat_mapping.get(c, [])
+                    cluster_cols = base_cols + stats
+                    st.session_state['recommended_players'] = combined_df[cluster_cols]
 
       # Password input
       password = st.text_input("Enter your Gemini API key", type="password")
@@ -211,9 +236,21 @@ with tab1:
       if st.button('Show Recommended Players'):
           with st.spinner('Generating recommendations...'):
               if player in df1.Player.unique():
-                st.session_state['recommended_players'] = df1[['Player', 'Pos', 'Squad', 'Age']]
+                # st.session_state['recommended_players'] = df1[['Player', 'Pos', 'Squad', 'Age']]
+                if 'GK' in df1.loc[df1.Player == player]['Pos'].values[0]:
+                   st.session_state['recommended_players'] = df1[base_cols + ['GA', 'GA90', 'SoTA', 'Saves', 'Save%', 'W', 'D', 'L', 'CS', 'CS%', 'PSxG', 'PSxG/SoT', 'PSxG+/-', '/90', 'Cmp_stats_keeper_adv', 'Att_stats_keeper_adv', 'Cmp%_stats_keeper_adv', 'Att (GK)', 'Thr', 'Launch%', 'AvgLen', 'Opp', 'Stp', 'Stp%', '#OPA', '#OPA/90', 'AvgDist']]
+                else:
+                    stats = big_stat_mapping.get(c, [])
+                    cluster_cols = base_cols + stats
+                    st.session_state['recommended_players'] = df1[cluster_cols]
               else:
-                 st.session_state['recommended_players'] = combined_df[['Player', 'Pos', 'Squad', 'Age']]
+                #  st.session_state['recommended_players'] = combined_df[['Player', 'Pos', 'Squad', 'Age']]
+                if 'GK' in combined_df.loc[combined_df.Player == player]['Pos'].values[0]:
+                    st.session_state['recommended_players'] = combined_df[base_cols + ['GA', 'GA90', 'SoTA', 'Saves', 'Save%', 'W', 'D', 'L', 'CS', 'CS%', 'PSxG', 'PSxG/SoT', 'PSxG+/-', '/90', 'Cmp_stats_keeper_adv', 'Att_stats_keeper_adv', 'Cmp%_stats_keeper_adv', 'Att (GK)', 'Thr', 'Launch%', 'AvgLen', 'Opp', 'Stp', 'Stp%', '#OPA', '#OPA/90', 'AvgDist']]
+                else:
+                    stats = big_stat_mapping.get(c, [])
+                    cluster_cols = base_cols + stats
+                    st.session_state['recommended_players'] = combined_df[cluster_cols]
 
       # Password input
       password = st.text_input("Enter your Gemini API key", type="password")

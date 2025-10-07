@@ -1,0 +1,875 @@
+{
+    "0": [
+        "PrgDist_stats_possession",
+        "Carries",
+        "Cmp%",
+        "Int",
+        "TklW",
+        "Won",
+        "Sh/90"
+    ],
+    "1": [
+        "Carries",
+        "Cmp%",
+        "PrgDist_stats_possession",
+        "TklW",
+        "90s",
+        "PrgP",
+        "Int"
+    ],
+    "2": [
+        "Cmp%",
+        "Sh/90",
+        "SoT/90",
+        "Carries",
+        "PrgDist_stats_possession",
+        "PrgP",
+        "TklW"
+    ],
+    "3": [
+        "TklW",
+        "Blocks",
+        "PrgP",
+        "Int",
+        "Cmp%",
+        "Carries",
+        "Lost"
+    ],
+    "4": [
+        "Blocks",
+        "G-xG",
+        "Lost",
+        "xG",
+        "PrgC",
+        "SoT/90",
+        "Won"
+    ],
+    "5": [
+        "PrgC",
+        "Ast",
+        "PrgDist_stats_possession",
+        "xAG",
+        "SCA90",
+        "Blocks",
+        "Cmp%"
+    ],
+    "6": [
+        "Blocks",
+        "PrgDist_stats_possession",
+        "Carries",
+        "CrdR",
+        "90s",
+        "PrgP",
+        "Cmp%"
+    ],
+    "7": [
+        "Blocks",
+        "Sh/90",
+        "SoT/90",
+        "xAG",
+        "TklW",
+        "xG",
+        "Gls"
+    ],
+    "8": [
+        "TklW",
+        "Blocks",
+        "Sh/90",
+        "SoT/90",
+        "xG",
+        "Gls",
+        "Ast"
+    ],
+    "9": [
+        "Cmp%",
+        "90s",
+        "Won",
+        "PrgP",
+        "Clr",
+        "SCA90",
+        "xG"
+    ],
+    "10": [
+        "90s",
+        "PrgDist_stats_possession",
+        "Carries",
+        "xAG",
+        "PrgC",
+        "Gls",
+        "Ast"
+    ],
+    "11": [
+        "Blocks",
+        "PrgC",
+        "Fls",
+        "PrgP",
+        "Int",
+        "TklW",
+        "SCA"
+    ],
+    "12": [
+        "G-xG",
+        "Gls",
+        "SoT/90",
+        "Sh/90",
+        "xG",
+        "PrgC",
+        "SCA90"
+    ],
+    "13": [
+        "Gls",
+        "SoT/90",
+        "xG",
+        "Sh/90",
+        "xAG",
+        "Cmp%",
+        "PrgC"
+    ],
+    "14": [
+        "Gls",
+        "xG",
+        "Ast",
+        "SoT/90",
+        "xAG",
+        "Sh/90",
+        "SCA"
+    ],
+    "15": [
+        "Cmp%",
+        "Fls",
+        "TklW",
+        "SCA90",
+        "90s",
+        "PrgP",
+        "Blocks"
+    ],
+    "16": [
+        "TklW",
+        "Int",
+        "Lost",
+        "Clr",
+        "Blocks",
+        "Fls",
+        "CrdY"
+    ],
+    "17": [
+        "Blocks",
+        "TklW",
+        "Int",
+        "90s",
+        "PrgC",
+        "Carries",
+        "KP"
+    ],
+    "18": [
+        "Blocks",
+        "TklW",
+        "Int",
+        "90s",
+        "Clr",
+        "Lost",
+        "PrgC"
+    ],
+    "19": [
+        "Blocks",
+        "90s",
+        "KP",
+        "PrgC",
+        "TklW",
+        "xAG",
+        "SCA"
+    ],
+    "20": [
+        "Fls",
+        "CrdY",
+        "Lost",
+        "TklW",
+        "KP",
+        "PrgP",
+        "SCA"
+    ],
+    "21": [
+        "CrdY",
+        "Fls",
+        "PrgP",
+        "TklW",
+        "Gls",
+        "G-xG",
+        "Won"
+    ],
+    "22": [
+        "Cmp%",
+        "PrgP",
+        "TklW",
+        "Carries",
+        "SoT/90",
+        "Int",
+        "Sh/90"
+    ],
+    "23": [
+        "Int",
+        "Fls",
+        "CrdY",
+        "TklW",
+        "Lost",
+        "PrgC",
+        "PrgDist_stats_possession"
+    ],
+    "24": [
+        "Lost",
+        "CrdY",
+        "Int",
+        "Fls",
+        "TklW",
+        "Ast",
+        "Cmp%"
+    ],
+    "25": [
+        "Fls",
+        "Lost",
+        "TklW",
+        "CrdY",
+        "90s",
+        "Int",
+        "PrgP"
+    ],
+    "26": [
+        "KP",
+        "SCA",
+        "xAG",
+        "Lost",
+        "Blocks",
+        "SCA90",
+        "Ast"
+    ],
+    "27": [
+        "SCA90",
+        "KP",
+        "SCA",
+        "xAG",
+        "Cmp%",
+        "Ast",
+        "Sh/90"
+    ],
+    "28": [
+        "Ast",
+        "KP",
+        "xAG",
+        "SCA",
+        "SCA90",
+        "Sh/90",
+        "Blocks"
+    ],
+    "29": [
+        "Ast",
+        "SCA",
+        "KP",
+        "xAG",
+        "PrgC",
+        "SCA90",
+        "Gls"
+    ],
+    "30": [
+        "Clr",
+        "Int",
+        "Won",
+        "90s",
+        "CrdY",
+        "Carries",
+        "TklW"
+    ],
+    "31": [
+        "Clr",
+        "Won",
+        "90s",
+        "Int",
+        "Carries",
+        "SCA90",
+        "PrgDist_stats_possession"
+    ],
+    "32": [
+        "Cmp%",
+        "Sh/90",
+        "SCA",
+        "KP",
+        "SoT/90",
+        "SCA90",
+        "90s"
+    ],
+    "33": [
+        "SCA90",
+        "Clr",
+        "SCA",
+        "KP",
+        "Cmp%",
+        "xAG",
+        "PrgC"
+    ],
+    "34": [
+        "Cmp%",
+        "Clr",
+        "PrgDist_stats_possession",
+        "KP",
+        "SCA90",
+        "Carries",
+        "xAG"
+    ],
+    "35": [
+        "Clr",
+        "SCA90",
+        "CrdR",
+        "SCA",
+        "KP",
+        "PrgC",
+        "xAG"
+    ],
+    "36": [
+        "Clr",
+        "SCA90",
+        "SCA",
+        "KP",
+        "xAG",
+        "PrgC",
+        "Blocks"
+    ],
+    "37": [
+        "Cmp%",
+        "Blocks",
+        "Lost",
+        "KP",
+        "SCA",
+        "SCA90",
+        "xAG"
+    ],
+    "38": [
+        "90s",
+        "SCA",
+        "PrgDist_stats_possession",
+        "PrgC",
+        "Lost",
+        "SCA90",
+        "Carries"
+    ],
+    "39": [
+        "90s",
+        "Carries",
+        "SCA",
+        "PrgDist_stats_possession",
+        "Sh/90",
+        "KP",
+        "SoT/90"
+    ],
+    "40": [
+        "SCA90",
+        "SCA",
+        "90s",
+        "KP",
+        "Blocks",
+        "Cmp%",
+        "PrgC"
+    ],
+    "41": [
+        "90s",
+        "Cmp%",
+        "Lost",
+        "SCA",
+        "KP",
+        "Blocks",
+        "xAG"
+    ],
+    "42": [
+        "SCA",
+        "Blocks",
+        "KP",
+        "SCA90",
+        "xAG",
+        "90s",
+        "PrgC"
+    ],
+    "43": [
+        "90s",
+        "SCA",
+        "Sh/90",
+        "KP",
+        "xAG",
+        "Ast",
+        "Cmp%"
+    ],
+    "44": [
+        "PrgP",
+        "Carries",
+        "SCA",
+        "PrgDist_stats_possession",
+        "KP",
+        "SCA90",
+        "Ast"
+    ],
+    "45": [
+        "PrgP",
+        "Carries",
+        "PrgDist_stats_possession",
+        "SCA",
+        "KP",
+        "xAG",
+        "90s"
+    ],
+    "46": [
+        "Lost",
+        "PrgP",
+        "SCA",
+        "xAG",
+        "KP",
+        "Ast",
+        "TklW"
+    ],
+    "47": [
+        "PrgP",
+        "KP",
+        "SCA",
+        "CrdR",
+        "Carries",
+        "xAG",
+        "PrgDist_stats_possession"
+    ],
+    "48": [
+        "Fls",
+        "TklW",
+        "PrgP",
+        "SCA90",
+        "Lost",
+        "Blocks",
+        "SCA"
+    ],
+    "49": [
+        "Fls",
+        "TklW",
+        "SCA90",
+        "PrgP",
+        "Blocks",
+        "Lost",
+        "SCA"
+    ],
+    "50": [
+        "Fls",
+        "SCA90",
+        "TklW",
+        "PrgP",
+        "Blocks",
+        "SCA",
+        "Lost"
+    ],
+    "51": [
+        "SCA90",
+        "90s",
+        "Carries",
+        "Won",
+        "Clr",
+        "Int",
+        "Err"
+    ],
+    "52": [
+        "90s",
+        "Carries",
+        "Err",
+        "PrgDist_stats_possession",
+        "Clr",
+        "Won",
+        "SCA90"
+    ],
+    "53": [
+        "90s",
+        "Carries",
+        "PrgDist_stats_possession",
+        "Cmp%",
+        "PrgP",
+        "TklW",
+        "Int"
+    ],
+    "54": [
+        "90s",
+        "PrgDist_stats_possession",
+        "SCA90",
+        "Carries",
+        "Clr",
+        "Won",
+        "PrgC"
+    ],
+    "55": [
+        "90s",
+        "Sh/90",
+        "Carries",
+        "Cmp%",
+        "PrgP",
+        "SCA90",
+        "Clr"
+    ],
+    "56": [
+        "90s",
+        "PrgDist_stats_possession",
+        "Carries",
+        "SCA",
+        "Ast",
+        "PrgP",
+        "Won"
+    ],
+    "57": [
+        "Cmp%",
+        "90s",
+        "SCA90",
+        "Carries",
+        "PrgDist_stats_possession",
+        "CrdY",
+        "Fls"
+    ],
+    "58": [
+        "Fls",
+        "90s",
+        "TklW",
+        "SCA90",
+        "PrgP",
+        "Err",
+        "Lost"
+    ],
+    "59": [
+        "SoT/90",
+        "90s",
+        "Sh/90",
+        "Carries",
+        "PrgDist_stats_possession",
+        "Int",
+        "TklW"
+    ],
+    "60": [
+        "SoT/90",
+        "Sh/90",
+        "Carries",
+        "90s",
+        "Int",
+        "PrgDist_stats_possession",
+        "xG"
+    ],
+    "61": [
+        "Cmp%",
+        "G-xG",
+        "Lost",
+        "Blocks",
+        "Sh/90",
+        "Carries",
+        "Gls"
+    ],
+    "62": [
+        "PrgC",
+        "Cmp%",
+        "Sh/90",
+        "Clr",
+        "SoT/90",
+        "Int",
+        "Carries"
+    ],
+    "63": [
+        "Clr",
+        "Won",
+        "Int",
+        "Err",
+        "Carries",
+        "SCA90",
+        "KP"
+    ],
+    "64": [
+        "Clr",
+        "Won",
+        "Cmp%",
+        "Carries",
+        "SCA90",
+        "Int",
+        "KP"
+    ],
+    "65": [
+        "Clr",
+        "Int",
+        "SCA90",
+        "SoT/90",
+        "Sh/90",
+        "TklW",
+        "Err"
+    ],
+    "66": [
+        "Clr",
+        "Int",
+        "SCA90",
+        "Won",
+        "SCA",
+        "KP",
+        "Cmp%"
+    ],
+    "67": [
+        "90s",
+        "Carries",
+        "PrgDist_stats_possession",
+        "Fls",
+        "Won",
+        "PrgP",
+        "SCA90"
+    ],
+    "68": [
+        "Sh/90",
+        "Err",
+        "SoT/90",
+        "90s",
+        "xG",
+        "PrgDist_stats_possession",
+        "Gls"
+    ],
+    "69": [
+        "90s",
+        "Carries",
+        "PrgDist_stats_possession",
+        "SCA",
+        "Fls",
+        "Sh/90",
+        "xG"
+    ],
+    "70": [
+        "Carries",
+        "90s",
+        "Cmp%",
+        "PrgP",
+        "PrgDist_stats_possession",
+        "Won",
+        "xG"
+    ],
+    "71": [
+        "PrgDist_stats_possession",
+        "Carries",
+        "PrgP",
+        "CrdR",
+        "Clr",
+        "Int",
+        "Cmp%"
+    ],
+    "72": [
+        "Carries",
+        "PrgDist_stats_possession",
+        "Cmp%",
+        "PrgP",
+        "Blocks",
+        "Clr",
+        "xAG"
+    ],
+    "73": [
+        "PrgDist_stats_possession",
+        "Carries",
+        "Clr",
+        "PrgP",
+        "Won",
+        "Cmp%",
+        "90s"
+    ],
+    "74": [
+        "Carries",
+        "PrgDist_stats_possession",
+        "Won",
+        "Clr",
+        "PrgP",
+        "Cmp%",
+        "90s"
+    ],
+    "75": [
+        "Carries",
+        "PrgDist_stats_possession",
+        "Clr",
+        "Int",
+        "Cmp%",
+        "Won",
+        "Err"
+    ],
+    "76": [
+        "xG",
+        "Gls",
+        "SoT/90",
+        "Sh/90",
+        "Ast",
+        "90s",
+        "Int"
+    ],
+    "77": [
+        "Gls",
+        "xAG",
+        "PrgC",
+        "xG",
+        "Ast",
+        "SCA",
+        "SoT/90"
+    ],
+    "78": [
+        "PrgP",
+        "SCA90",
+        "SCA",
+        "KP",
+        "xAG",
+        "Clr",
+        "PrgC"
+    ],
+    "79": [
+        "Clr",
+        "SCA90",
+        "Carries",
+        "Sh/90",
+        "Int",
+        "90s",
+        "Fls"
+    ],
+    "80": [
+        "KP",
+        "Fls",
+        "SCA90",
+        "CrdY",
+        "SCA",
+        "Lost",
+        "PrgP"
+    ],
+    "81": [
+        "TklW",
+        "Int",
+        "Lost",
+        "Fls",
+        "PrgP",
+        "CrdY",
+        "90s"
+    ],
+    "82": [
+        "TklW",
+        "Lost",
+        "Fls",
+        "PrgP",
+        "CrdY",
+        "SCA",
+        "90s"
+    ],
+    "83": [
+        "TklW",
+        "Lost",
+        "Fls",
+        "PrgP",
+        "CrdY",
+        "Int",
+        "Blocks"
+    ],
+    "84": [
+        "Ast",
+        "PrgC",
+        "KP",
+        "xAG",
+        "SCA",
+        "SCA90",
+        "Gls"
+    ],
+    "85": [
+        "PrgC",
+        "SCA",
+        "Blocks",
+        "KP",
+        "xAG",
+        "Gls",
+        "Ast"
+    ],
+    "86": [
+        "xAG",
+        "Ast",
+        "KP",
+        "PrgC",
+        "SCA",
+        "SCA90",
+        "xG"
+    ],
+    "87": [
+        "PrgC",
+        "SCA",
+        "xAG",
+        "SoT/90",
+        "SCA90",
+        "Sh/90",
+        "KP"
+    ],
+    "88": [
+        "Won",
+        "xG",
+        "Gls",
+        "Fls",
+        "Cmp%",
+        "Sh/90",
+        "SoT/90"
+    ],
+    "89": [
+        "xG",
+        "Gls",
+        "SoT/90",
+        "Sh/90",
+        "Int",
+        "PrgDist_stats_possession",
+        "Carries"
+    ],
+    "90": [
+        "xG",
+        "Gls",
+        "Won",
+        "Cmp%",
+        "SoT/90",
+        "Sh/90",
+        "Fls"
+    ],
+    "91": [
+        "xG",
+        "Gls",
+        "SoT/90",
+        "Cmp%",
+        "Sh/90",
+        "PrgDist_stats_possession",
+        "Fls"
+    ],
+    "92": [
+        "Fls",
+        "90s",
+        "TklW",
+        "SCA90",
+        "PrgP",
+        "Blocks",
+        "Int"
+    ],
+    "93": [
+        "Cmp%",
+        "Fls",
+        "TklW",
+        "PrgP",
+        "SCA90",
+        "Lost",
+        "Blocks"
+    ],
+    "94": [
+        "SCA90",
+        "PrgC",
+        "Sh/90",
+        "SoT/90",
+        "xAG",
+        "KP",
+        "Ast"
+    ],
+    "95": [
+        "SCA90",
+        "SoT/90",
+        "90s",
+        "Sh/90",
+        "Clr",
+        "Won",
+        "Int"
+    ],
+    "96": [
+        "KP",
+        "SCA",
+        "xAG",
+        "PrgP",
+        "SCA90",
+        "Ast",
+        "Blocks"
+    ]
+}
