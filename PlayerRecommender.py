@@ -24,7 +24,7 @@ pd.set_option('display.max_rows', None)
 all_players = pd.read_csv('Files/k_means_players.csv')
 New = pd.read_csv('Files/gmm_players.csv')
 
-players = list(all_players.Player.sort_values().unique())
+players = list(all_players.Player.sort_values())
 
 def load_stat_mapping(filepath):
   with open(filepath, 'r') as f:
