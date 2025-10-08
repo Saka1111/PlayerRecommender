@@ -192,7 +192,7 @@ with tab1:
                 color=alt.Color('Player', legend=None),
                 tooltip=['Player', alt.Tooltip(metric, format=".2f")]
               ).properties(
-                title=f'{metric.replace("_", " ").title()} per 90'
+                title=f'{metric.replace("_", " ").title()}'
               )
 
               graph_list.append(bar_chart)
@@ -376,7 +376,7 @@ with tab1:
                 color=alt.Color('Player', legend=None),
                 tooltip=['Player', alt.Tooltip(metric, format=".2f")]
               ).properties(
-                title=f'{metric.replace("_", " ").title()} per 90'
+                title=f'{metric.replace("_", " ").title()}'
               )
 
               graph_list.append(bar_chart)
