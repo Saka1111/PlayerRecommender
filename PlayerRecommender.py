@@ -187,12 +187,12 @@ with tab1:
 
           for metric in bar_chart_metrics:
               bar_chart = alt.Chart(selected_players_df).mark_bar().encode(
-                y=alt.Y(metric, axis=alt.Axis(title=metric.title())),
+                y=alt.Y(metric, axis=alt.Axis(title=metric)),
                 x=alt.X('Player', sort='x', axis=alt.Axis(title='Player')),
                 color=alt.Color('Player', legend=None),
                 tooltip=['Player', alt.Tooltip(metric, format=".2f")]
               ).properties(
-                title=f'{metric.replace("_", " ").title()}'
+                title=f'{metric}'
               )
 
               graph_list.append(bar_chart)
@@ -371,12 +371,12 @@ with tab1:
 
           for metric in bar_chart_metrics:
               bar_chart = alt.Chart(selected_players_df).mark_bar().encode(
-                y=alt.Y(metric, axis=alt.Axis(title=metric.title())),
+                y=alt.Y(metric, axis=alt.Axis(title=metric)),
                 x=alt.X('Player', sort='x', axis=alt.Axis(title='Player')),
                 color=alt.Color('Player', legend=None),
                 tooltip=['Player', alt.Tooltip(metric, format=".2f")]
               ).properties(
-                title=f'{metric.replace("_", " ").title()}'
+                title=f'{metric}'
               )
 
               graph_list.append(bar_chart)
