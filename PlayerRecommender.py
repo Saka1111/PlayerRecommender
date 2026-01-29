@@ -15,17 +15,26 @@ st.set_page_config(layout = "wide")
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 
-all_players = pd.read_csv('Files/k_means_players.csv')
-New = pd.read_csv('Files/gmm_players.csv')
+@st.cache_data
+def load_all_players():
+  return pd.read_csv('Files/k_means_players.csv')
 
-players = list(all_players.Player.sort_values())
+@st.cache_data
+def load_gmm_players():
+  return pd.read_csv('Files/gmm_players.csv')
 
+@st.cache_data
 def load_stat_mapping(filepath):
   with open(filepath, 'r') as f:
     string_keys_mapping = json.load(f)
     
   int_keys_mapping = {int(k): v for k, v in string_keys_mapping.items()}
   return int_keys_mapping
+
+all_players = load_all_players()
+New = load_gmm_players()
+
+players = list(all_players.Player.sort_values())
 
 stat_mapping = load_stat_mapping('Files/s_stats.json')
 
