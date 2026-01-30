@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
+from io import StringIO
 
 import streamlit as st
 import plotly.express as px
@@ -136,13 +137,13 @@ if search == 'specific':
 
             if player in df1.Player.unique():
               data_json = df1.to_json(orient='records')
-              selected_players_df = pd.read_json(data_json)
+              selected_players_df = pd.read_json(StringIO(data_json))
 
             else:
               player_df = all_players.loc[all_players.Player == player]
               combined_df = pd.concat([player_df, df1])
               data_json = combined_df.to_json(orient='records')
-              selected_players_df = pd.read_json(data_json)
+              selected_players_df = pd.read_json(StringIO(data_json))
 
             # Creating radar chart
             if 'GK' in selected_players_df.loc[selected_players_df.Player == player]['Pos'].values[0]:
@@ -336,13 +337,13 @@ elif search == 'broad':
 
             if player in df1.Player.unique():
               data_json = df1.to_json(orient='records')
-              selected_players_df = pd.read_json(data_json)
+              selected_players_df = pd.read_json(StringIO(data_json))
 
             else:
               player_df = all_players.loc[all_players.Player == player]
               combined_df = pd.concat([player_df, df1])
               data_json = combined_df.to_json(orient='records')
-              selected_players_df = pd.read_json(data_json)
+              selected_players_df = pd.read_json(StringIO(data_json))
 
             # Creating radar chart
             if 'GK' in selected_players_df.loc[selected_players_df.Player == player]['Pos'].values[0]:
