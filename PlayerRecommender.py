@@ -451,21 +451,18 @@ elif search == 'broad':
 
     # States
     if 'recommended_players' in st.session_state:
-      col_l, col_c, col_r = st.columns([0.5, 3, 0.5])
-      with col_c:
-        st.write(st.session_state['recommended_players'])
+      st.write(st.session_state['recommended_players'])
 
     if 'graph_code' in st.session_state:
       for graph in st.session_state['graph_code']:
         if isinstance(graph, go.Figure):
           st.plotly_chart(graph, use_container_width=True)
+
         else:
           st.altair_chart(graph, use_container_width=True)
 
     if 'ai_recommendation' in st.session_state:
-      col_l, col_c, col_r = st.columns([0.5, 3, 0.5])
-      with col_c:
-        st.write(st.session_state['ai_recommendation'])
+      st.write(st.session_state['ai_recommendation'])
 
   else:
     st.write('Player not in database')
