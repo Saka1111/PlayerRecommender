@@ -217,9 +217,6 @@ if search == 'specific':
 
     col_left_btn, col_center_btn, col_right_btn = st.columns([1, 2, 1])
 
-    # with col1:
-    #   st.write('')
-
     with col_center_btn:
       col1, col2, col3 = st.columns(3)
 
@@ -248,9 +245,6 @@ if search == 'specific':
 
             except:
               st.error("Input a valid API Key")
-
-    # with col3:
-    #   st.write('')
 
     # States
     if 'recommended_players' in st.session_state:
@@ -415,39 +409,37 @@ elif search == 'broad':
     genai.configure(api_key = API) 
     model = genai.GenerativeModel("gemini-2.5-flash")
 
+    col_left_btn, col_center_btn, col_right_btn = st.columns([1, 2, 1])
+
     col1, col2, col3 = st.columns(3)
 
-    with col1:
-      st.write('')
+    with col_center_btn:
 
-    with col2:
-      # AI Recommendation
-      if st.button('AI Recommendation'):
-        with st.spinner('Generating AI response...'):
+      with col2:
+        # AI Recommendation
+        if st.button('AI Recommendation'):
+          with st.spinner('Generating AI response...'):
 
-          message = f'Given their statistics in the 24/25 soccer season, can you give me the best suited players to replace {player} out of these players in the JSON: {data_json}.'
+            message = f'Given their statistics in the 24/25 soccer season, can you give me the best suited players to replace {player} out of these players in the JSON: {data_json}.'
 
-          prompt = f"""
-          {system_instructions}{message}
-          The players recommended should be similar to {player} but also be an improvement on them.
-          Prioritise improvement.
-          Do not recommend players that are in the same squad as {player}
-          Just note that the "cluster" and "Loss" columns are not important for the analysis, they are just for the clustering and similarity purposes.
-          I want no errors when I do response.text, make sure any error with this does not occur
-          Please provide pros and cons of each player you recommend
-          And give a final evaluation
-          """
+            prompt = f"""
+            {system_instructions}{message}
+            The players recommended should be similar to {player} but also be an improvement on them.
+            Prioritise improvement.
+            Do not recommend players that are in the same squad as {player}
+            Just note that the "cluster" and "Loss" columns are not important for the analysis, they are just for the clustering and similarity purposes.
+            I want no errors when I do response.text, make sure any error with this does not occur
+            Please provide pros and cons of each player you recommend
+            And give a final evaluation
+            """
 
-          try:
-            response = model.generate_content(prompt)
-            st.session_state['ai_recommendation'] = response.text
-            text = response.text
+            try:
+              response = model.generate_content(prompt)
+              st.session_state['ai_recommendation'] = response.text
+              text = response.text
 
-          except:
-            st.error("Input a valid API Key")
-
-    with col3:
-      st.write('')
+            except:
+              st.error("Input a valid API Key")
 
     # States
     if 'recommended_players' in st.session_state:
