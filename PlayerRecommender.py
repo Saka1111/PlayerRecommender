@@ -411,9 +411,9 @@ elif search == 'broad':
 
     col_left_btn, col_center_btn, col_right_btn = st.columns([1, 2, 1])
 
-    col1, col2, col3 = st.columns(3)
-
     with col_center_btn:
+
+      col1, col2, col3 = st.columns(3)
 
       with col2:
         # AI Recommendation
