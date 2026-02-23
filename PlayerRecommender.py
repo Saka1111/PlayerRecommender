@@ -306,6 +306,8 @@ norm_cols_zipped = list(zip(norm_cols, norm_cols_def))
 col_left, col_center, col_right = st.columns([1, 2, 1])
 with col_center:
   st.markdown("<h1 style='text-align: center;'>The Player Recommender ⚽️</h1>", unsafe_allow_html=True)
+
+st.markdown("<p style='position: absolute; top: 10px; right: 10px; font-size: 0.8em; color: gray;'>Data sourced from the top 5 leagues in the 24/25 football season.</p>", unsafe_allow_html=True)
     
 system_instructions = ("You are a soccer data analyst and scout."
                   "You will always analyse based on the data provided to you and you never complain about the data that is given to you."

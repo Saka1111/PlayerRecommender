@@ -9,6 +9,8 @@ st.set_page_config(page_title='Player Comparisons', page_icon='⚖️', layout='
 
 st.markdown("<h1 style='text-align: center;'>Player Comparisons</h1>", unsafe_allow_html=True)
 
+st.markdown("<p style='position: absolute; top: 10px; right: 10px; font-size: 0.8em; color: gray;'>Data sourced from the top 5 leagues in the 24/25 football season.</p>", unsafe_allow_html=True)
+
 @st.cache_data
 def load_data():
     df = pd.read_csv('Files/Cleaned_PlayerData.csv')
