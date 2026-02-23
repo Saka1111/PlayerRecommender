@@ -328,7 +328,10 @@ with OPC:
         avg_stats = ['MP', 'Min', '90s', 'Gls', 'Ast', 'G+A', 'CrdY', 'CrdR']
         df_avg = df[['Player'] + avg_stats]
 
-        chart_data = df_avg[df_avg['Player'].isin([player1, player2])]
+        # chart_data = df_avg[df_avg['Player'].isin([player1, player2])]
+        chart_data1 = df_avg[df_avg['Player'].isin([player1])]
+        chart_data2 = df_avg[df_avg['Player'].isin([player2])]
+        chart_data = pd.concat([chart_data1, chart_data2])
 
         col1, col2, col3 = st.columns(3)
 
@@ -362,7 +365,10 @@ with OPC:
     with tab2:
         df_off = df[['Player'] + attacking_stats]
 
-        chart_data_off = df_off[df_off['Player'].isin([player2, player1])]
+        chart_data_off1 = df_off[df_off['Player'].isin([player1])]
+        chart_data_off2 = df_off[df_off['Player'].isin([player2])]
+
+        chart_data_off = pd.concat([chart_data_off1, chart_data_off2])
 
         col1, col2, col3 = st.columns(3)
 
@@ -382,7 +388,10 @@ with OPC:
     with tab3:
         df_mid = df[['Player'] + midfield_stats]
 
-        chart_data_mid = df_mid[df_mid['Player'].isin([player2, player1])]
+        chart_data_mid1 = df_mid[df_mid['Player'].isin([player1])]
+        chart_data_mid2 = df_mid[df_mid['Player'].isin([player2])]
+
+        chart_data_mid = pd.concat([chart_data_mid1, chart_data_mid2])
 
         col1, col2, col3 = st.columns(3)
 
@@ -401,7 +410,10 @@ with OPC:
     with tab4:
         df_def = df[['Player'] + defensive_stats]
 
-        chart_data_def = df_def[df_def['Player'].isin([player2, player1])]
+        chart_data_def1 = df_def[df_def['Player'].isin([player1])]
+        chart_data_def2 = df_def[df_def['Player'].isin([player2])]
+
+        chart_data_def = pd.concat([chart_data_def1, chart_data_def2])
 
         col1, col2, col3 = st.columns(3)
 
@@ -419,7 +431,10 @@ with OPC:
     with tab5:
         df_other = df[['Player'] + other_stats]
 
-        chart_data_other = df_other[df_other['Player'].isin([player2, player1])]
+        chart_data_other1 = df_other[df_other['Player'].isin([player1])]
+        chart_data_other2 = df_other[df_other['Player'].isin([player2])]
+
+        chart_data_other = pd.concat([chart_data_other1, chart_data_other2])
 
         col1, col2, col3 = st.columns(3)
 
@@ -458,7 +473,9 @@ with GKC:
     
     df_gk = df[['Player'] + goalkeeping_stats]
 
-    chart_data_gk = df_gk[df_gk['Player'].isin([gk_player2, gk_player1])]
+    chart_data_gk1 = df_gk[df_gk['Player'].isin([gk_player1])]
+    chart_data_gk2 = df_gk[df_gk['Player'].isin([gk_player2])]
+    chart_data_gk = pd.concat([chart_data_gk1, chart_data_gk2])
 
     col1, col2, col3 = st.columns(3)
 
