@@ -267,15 +267,55 @@ goalkeeping_zipped = list(zip(goalkeeping_stats, goalkeeping_stats_def))
 # Zip other stats with their definitions
 other_zipped = list(zip(other_stats, other_stats_def))
 
+# Neutral or better to have more stats
+nuetral_or_better_to_have_more = [
+    'Player', 'Pos', 'Squad', 'MP', 'Starts', 'Min', '90s', 'Dist', 
+    'Def 3rd', 'Mid 3rd', 'Att 3rd', 'Att_stats_defense', 'Def 3rd_stats_possession', 
+    'Mid 3rd_stats_possession', 'Att 3rd_stats_possession', 'Live_stats_possession', 
+    'Mn/MP', 'Min%', 'Mn/Start', 'Subs', 'Mn/Sub', 'unSub', 'Launch%',
+    'Gls', 'Ast', 'G+A', 'G-PK', 'PK', 'PKatt', 'xG', 'npxG', 'xAG', 
+    'npxG+xAG', 'PrgC', 'PrgP', 'PrgR', 'G+A-PK', 'xG+xAG', 'Sh', 'SoT', 
+    'SoT%', 'Sh/90', 'SoT/90', 'G/Sh', 'G/SoT', 'FK', 'npxG/Sh', 'G-xG', 
+    'np:G-xG', 'Cmp', 'Att', 'Cmp%', 'TotDist', 'PrgDist', 'xA', 'A-xAG', 
+    'KP', '1/3', 'PPA', 'CrsPA', 'Live', 'Dead', 'FK_stats_passing_types', 
+    'TB', 'Sw', 'Crs', 'TI', 'CK', 'In', 'Out', 'Str', 'SCA', 'SCA90', 
+    'PassLive', 'PassDead', 'TO', 'Sh_stats_gca', 'Fld', 'Def', 'GCA', 
+    'GCA90', 'Tkl', 'TklW', 'Blocks_stats_defense', 'Int', 'Tkl+Int', 
+    'Clr', 'Touches', 'Att_stats_possession', 'Succ', 'Succ%', 'Carries', 
+    'TotDist_stats_possession', 'PrgDist_stats_possession', 
+    'PrgC_stats_possession', '1/3_stats_possession', 'CPA', 'Rec', 
+    'PrgR_stats_possession', 'Compl', 'PPM', 'onG', '+/-', '+/-90', 'On-Off', 
+    'onxG', 'xG+/-', 'xG+/-90', 'Fld_stats_misc', 'PKwon', 'Recov', 'Won', 
+    'Won%', 'Saves', 'Save%', 'W', 'D', 'CS', 'CS%', 'PSxG', 'PSxG/SoT', 
+    'PSxG+/-', '/90', 'Cmp_stats_keeper_adv', 'Att_stats_keeper_adv', 
+    'Cmp%_stats_keeper_adv', 'Thr', 'Stp', 'Stp%', '#OPA', '#OPA/90', 'AvgDist'
+]
+
+# better to have less stats
+better_to_have_less = [
+    'CrdY', 'CrdR', 'Lost', 'Blocks', 'Off', 'Err', 'Def Pen', 'Tkld', 
+    'Tkld%', 'Mis', 'Dis', 'onGA', '2CrdY', 'Fls', 'Off_stats_misc', 
+    'PKcon', 'OG', 'Lost_stats_misc', 'GA', 'GA90', 'SoTA', 'L', 
+    'PKatt_stats_keeper', 'PKA', 'FK_stats_keeper_adv', 'CK_stats_keeper_adv', 
+    'OG_stats_keeper_adv', 'Opp', 'AvgLen'
+]
+
 def create_colored_bar_chart(data, x_col, y_col, title):
     colors = []
     
     if len(data) == 2:
         val1, val2 = data[y_col].values[0], data[y_col].values[1]
-        if val1 > val2:
-            colors = ['green', 'red']
-        elif val1 < val2:
-            colors = ['red', 'green']
+
+        if y_col in nuetral_or_better_to_have_more:
+            if val1 > val2:
+                colors = ['green', 'red']
+            elif val1 < val2:
+                colors = ['red', 'green']
+        elif y_col in better_to_have_less:
+            if val1 > val2:
+                colors = ['red', 'green']
+            elif val1 < val2:
+                colors = ['green', 'red']
         elif val1 == val2:
             colors = ['yellow', 'yellow']
     else:
