@@ -320,8 +320,13 @@ def create_colored_bar_chart(data, x_col, y_col, title):
                 colors = ['green', 'red']
             elif val1 == val2:
                 colors = ['yellow', 'yellow']
-        elif val1 == val2:
-            colors = ['yellow', 'yellow']
+        else:
+            if val1 > val2:
+                colors = ['green', 'red']
+            elif val1 < val2:
+                colors = ['red', 'green']
+            elif val1 == val2:
+                colors = ['yellow', 'yellow']
     else:
         colors = ['blue'] * len(data)
     
