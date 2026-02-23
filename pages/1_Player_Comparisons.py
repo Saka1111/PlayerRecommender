@@ -311,11 +311,15 @@ def create_colored_bar_chart(data, x_col, y_col, title):
                 colors = ['green', 'red']
             elif val1 < val2:
                 colors = ['red', 'green']
+            elif val1 == val2:
+                colors = ['yellow', 'yellow']
         elif y_col in better_to_have_less:
             if val1 > val2:
                 colors = ['red', 'green']
             elif val1 < val2:
                 colors = ['green', 'red']
+            elif val1 == val2:
+                colors = ['yellow', 'yellow']
         elif val1 == val2:
             colors = ['yellow', 'yellow']
     else:
